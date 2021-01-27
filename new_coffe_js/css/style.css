@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto";
+    margin: auto;
+    width: 100%;
+    background-color: #f2eee8;
+    
+}
+.line{
+    display: block;
+    border: 1px solid black;
+    margin: 10px 0;
+    display: none;
+}
+header.menu_container{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../img/pexels-fauxels-3183198.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* header.menu nav ul li{
+    background-image: url(../img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+    background-position: center;
+    list-style-type: none;
+    margin: auto;
+} */
+/* ##### sidebar menu ############### */
+.wrapper {
+    display: flex;
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+  #content .navbar{
+      position:absolute;
+  }
+  #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #262933;
+    color: #fff;
+    transition: all 0.4s;
+  }
+  
+  #sidebar.active {
+    margin-left: -250px;
+  }
+  
+  #sidebar .sidebar-header {
+    padding: 20px;
+    background: #1b1d24;
+  }
+  
+  #sidebar ul.components {
+    padding: 20px 0;
+    /* border-bottom: 1px solid #47748b; */
+  }
+  
+  #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+  }
+  
+  #sidebar ul li a:hover {
+    color: #262933;
+    background: #fff;
+  }
+  
+  #sidebar ul li.active>a,
+  a[aria-expanded="true"] {
+    color: #fff;
+    background: #1b1d24;
+  }
+  
+  a[data-toggle="collapse"] {
+    position: relative;
+  }
+  
+  .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+  }
+  
+  ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #1b1d24;
+  }
+/* ##### end sidebar menu ############### */
+header.menu_container .logo{
+    background-image:url(../img/TCS+Logo+Mug@4x+copy.png);
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* header.menu_container .scrollbar{
+    display: none;
+} */
+header.menu_container h1{
+    width: 70%;
+    margin:  auto;
+    color: white;
+    font-family: "Courgette";
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20%;
+}
+header.menu_container .pointer{
+    background-image: url(../img/arrow-down_23994.png);
+    height: 50px;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    opacity: 50%;
+}
+main{
+    margin-top: 30px;
+
+}
+main h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto";
+}
+main .our-coffee{
+    text-align: center;
+    margin: 20px auto;
+    font-family: "Courgette";
+    font-size: 24px;
+    width: 80%;
+    
+}
+main .slogans{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    text-align: center;
+    justify-content: space-around;
+    
+    
+}
+main .slogans h4{
+    margin: 10px 0;
+}
+
+main .slogans .love{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px auto;
+    height: 460px;
+    box-shadow: 0 0 10px #7f6848;
+    border-radius: 10px;
+    
+}
+main .slogans .love .pic1{
+    background-image: url(../img/pexels-fallon-michael-3551717.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #7f6848;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .slogans .people{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px auto;
+    height: 460px;
+    box-shadow: 0 0 10px #7f6848;
+    border-radius: 10px;
+}
+main .slogans .people .pic2{
+    background-image: url(../img/pexels-jonas-mohamadi-3049426.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #7f6848;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .slogans .philosophy{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 250px;
+    height: 460px;
+    box-shadow: 0 0 10px #7f6848;
+    border-radius: 10px;
+}
+main .slogans .philosophy .pic3{
+    background-image: url(../img/pexels-oleg-magni-890515.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #7f6848;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+main .events{
+    margin: 40px auto;
+    text-align: center;
+}
+main .events h2{
+    font-size: 36px;
+    margin: 10px auto;
+    font-weight:900;
+}
+main .events .event-dates{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+main .events .event-dates .date{
+    margin: 10px auto;
+    width: 300px;
+    font-size: 18px;
+}
+main .events .event-dates .date h3{
+    font-size: 54px;
+}
+main .event-dates .date p{
+    margin: 20px 10px;
+}
+main .events a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 10px 30px;
+}
+main .events a:hover{
+    background-color: black;
+    color: #f2eee8;
+}
+/* ##### slider ############### */
+
+.slider_container{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    /* height: 350px; */
+    position: relative;
+}
+.the_slider{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.the_slider .s_slide{
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    float: left;
+    background-repeat: no-repeat;
+    height: 900px;
+    object-fit: fill;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.the_slider .s_slider_container{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.the_slider .s_slider_container:active{
+    cursor: -webkit-grabbing
+}
+
+.the_slider .s_slide_0{
+    background-image: url('../img/pexels-claire-morgan-4068029.jpg');
+
+}
+
+.the_slider .s_slide_1{
+    background-image: url('../img/pexels-dominika-roseclay-977876.jpg');
+}
+/* .the_slider .s_slide_2{
+    here you can add another image
+    background-image: url('another image, look the name classes');
+} */
+.slider_text{
+    color: white;
+    font-size: 35px;
+    font-family: "Courgette";
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    text-shadow: 0 0 10px #7f6848;
+    z-index: 1;
+    position:absolute;
+    top:35%;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+/* ##### end slider ############### */
+main .coffee-menu{
+    margin: auto;
+}
+main .menu{
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+main .coffee-menu h4{
+    font-size: 35px;
+    font-family: "Courgette";
+    margin-top: 40px;
+    
+}
+main .menu .coffee h4{
+    width: 200px;
+    margin: 20px;
+    margin: auto;
+    font-family: "Roboto";
+    font-size: 24px;
+    
+}
+main .menu .coffee{
+    width: 250px;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 0 0 10px #7f6848;
+    color: #7f6848;
+}
+main .coffee-menu .coffee p{
+    font-size: 12px;
+    color: black;
+}
+
+main .cool-coffee .pic1{
+    background-image: url(../img/pexels-jonas-mohamadi-3049426.jpg);
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+main .cool-coffee .pic2{
+    background-image: url(../img/pexels-fallon-michael-3551717.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: center;  
+    background-repeat: no-repeat;    
+}
+main .cool-coffee .pic3{
+    background-image: url(../img/pexels-oleg-magni-890515.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main .cool-coffee .pic4{
+    background-image: url(../img/pexels-chevanon-photography-302902.jpg);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+main .counter{
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .counter .coffee{
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+}
+main .counter h2{
+    font-size: 50px;
+    font-family: "Courgette";
+}
+main .counter .coffee .pic1{
+    background-image: url(../img/coffee-cup_icon-icons.com_69402.png);
+    background-size: contain;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px auto;
+}
+main .counter .coffee .pic2{
+    background-image: url(../img/croisant_87578.png);
+    background-size: contain;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px auto;
+}
+main .counter .coffee .pic3{
+    background-image: url(../img/shake_icon-icons.com_59203.png);
+    background-size: contain;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px auto;
+}
+main .counter .circle{
+    display: block;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: #7f6848;
+    margin: auto;
+    box-shadow: 0 0 10px #6a573c;
+}
+main .counter .circle h4{
+    position: relative;
+    top: 90px;
+    color: #f2eee8;
+}
+
+footer{
+    background-color: #bfab8d;
+    color: #f2eee8;
+}
+footer h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px auto;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact input{
+    width: 250px;
+    height: 40px;
+    background-color: #f2eee8;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    border: none;
+    margin: 5px;
+    box-shadow: 0 0 5px #6a573c;
+    padding: 5px;
+}
+footer .contact input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: #f2eee8;    
+    
+}
+footer .contact input[type="button"]{
+    width: 150px;
+    text-align: center;
+}
+footer .contact input[type="button"]:hover{
+    background-color: #6a573c;
+    color: #f2eee8;
+}
+@media screen and (min-width: 500px){
+    header.menu h1{
+        font-size: 56px;
+    }
+    main .carousel p{
+        padding-top: 50px;
+    }
+    main .coffee-menu .menu .coffee{
+        width: 350px;
+    }
+    main .cool-coffee .pic3{
+        background-position-y: -100px;
+    }
+}
+@media screen and (min-width: 1000px){
+    main .slogans .love{
+        width: 400px;
+    }
+    main .slogans .people{
+        width: 400px;
+    }
+    main .slogans .philosophy{
+        width: 400px;
+    }
+    
+    main .carousel .first p{
+        padding: 20%;
+        width: 80%;
+    }
+    
+    
+    main .coffee-menu .menu .coffee{
+        width: 400px;
+    }  
+    main .events .event-dates .date{
+        width: 400px;
+    }
+    main .cool-coffee{
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 50% 50%;
+    }
+    main .cool-coffee .pic1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 100%;
+    }
+    main .cool-coffee .pic2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row: 1;
+        width: 100%;
+       
+
+    }
+    main .cool-coffee .pic3{
+        grid-column:3;
+        grid-row: 2;
+        background-position: center;
+        
+        
+    }
+    main .cool-coffee .pic4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row: 2;
+        
+        
+    }
+    footer{
+        padding: 20px;
+    }
+
+    
+
+}
